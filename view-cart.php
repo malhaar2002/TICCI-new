@@ -300,7 +300,7 @@
             ?>
 
           <tr>
-            <td><b><a href="./">Add Item</a></b></td>
+            <td><b><a href="./">Add More Items</a></b></td>
             <td></td>
             <td></td>
             <td>
