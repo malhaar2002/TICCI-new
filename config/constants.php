@@ -8,7 +8,7 @@
     define('DB_USERNAME', 'root');
     define('DB_PASSWORD', '');
     define('DB_NAME', 'food-order');
-    define('SITEURL', 'https://localhost/TICCI/TICCI3/');
+    define('SITEURL', 'https://localhost/TICCI-new/');
     define('EMPTY_CART', "confirmation");
 
     $conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD) or die(mysqli_error()); //database connection
