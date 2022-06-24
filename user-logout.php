@@ -7,6 +7,6 @@
     session_destroy();
 
     // 2. Redirect to login page
-    header("location:".SITEURL."/index.php");
+    header("location:".SITEURL."index.php");
 
 ?>
