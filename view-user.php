@@ -48,7 +48,7 @@
               <td><?php echo $username ?></td>
             </tr>
             <tr>
-              <td><span class="help-text">Delivery Location</span></td>
+              <td><span class="help-text">Default Delivery Location</span></td>
               <td><?php echo $location ?></td>
             </tr>
           </table>
@@ -56,7 +56,7 @@
         <!-- Button to update user details -->
         <div class="btns">
           <br>
-          <a href="edit-user.php" class="book-a-table-btn submit-button">Update User Details</a>
+          <a href="edit-user.php" class="book-a-table-btn submit-button">Update Profile</a>
           <br><br>
         </div>
 

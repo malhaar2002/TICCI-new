@@ -43,7 +43,7 @@
               <td><input type="text" name="mail" value="<?php echo $email ?>"></td>
             </tr>
             <tr>
-              <td><span class="help-text">Delivery Location</span></td>
+              <td><span class="help-text">Default Delivery Location</span></td>
               <td>
               <input type="radio" name="location" value="Flavors of the North" required>Flavors of the North<br>
               <input type="radio" name="location" value="Hostel Stilt Area" required>Hostel Stilt Area<br>

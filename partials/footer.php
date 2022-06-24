@@ -2,11 +2,11 @@
   <footer id="footer">
       <div class="container">
           <div class="copyright">
-              &copy; Copyright <strong><span>Flavours of the North</span></strong>. All Rights Reserved
+              &copy; Copyright <a href="#">Flavours of the North</a>. All Rights Reserved
           </div>
-          <div class="credits">
+          <!-- <div class="credits">
               Designed by <a href="https://malhaar2002.github.io/Personal-Website/" target = "_blank">Malhaar Arora</a>
-          </div>
+          </div> -->
       </div>
   </footer>
   <!-- End Footer -->
