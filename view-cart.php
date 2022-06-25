@@ -347,6 +347,13 @@
           </tr>
 
           <tr>
+              <td>
+                <input type="text" name="extra-info" id="extra-info" placeholder="extra delivery information" class="book-a-table-btn text-dark">
+              </td>
+            </tr>
+          <tr>
+            
+          <tr>
             <td>
               <input type="button" class="book-a-table-btn" id="rzp-button1" value="Proceed to Payment Gateway" onclick="pay_now()" style="background-color: black;">
             </td>
