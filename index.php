@@ -353,6 +353,11 @@
       <form id="f-order-form" method="POST" action="add-cart.php" style="display: none;">
         <input id="f-order-form-items" type="hidden" name="f-order-items" value="">
       </form>
+      
+      <form id="f-r-form" method="GET" action="view-cart.php" style="display: none;">
+        <input type="hidden" name="rdr" value="1">
+      </form>
+
       <button id="proceedCart" onclick="submit_orders();">Proceed to Cart (<b id="order_num">0</b>)</button>
 
   </section>

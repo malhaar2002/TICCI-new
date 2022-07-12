@@ -38,5 +38,19 @@ function submit_orders(){
     }
 }
 
-
+function viewCart(){
+    // Redirection to cart  
+     if (orders.length > 0){
+        let link = "";
+        for (let i = 0; i < orders.length; i++){
+            link += orders[i]+"<e>";
+        }
+    
+        document.getElementById("f-order-form-items").setAttribute("value", link);
+        document.getElementById("f-order-form").submit();
+    }
+    else{
+        document.getElementById("f-r-form").submit();
+    }
+  }
   

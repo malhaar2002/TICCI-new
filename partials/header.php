@@ -25,6 +25,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css?v=<?php echo time(); ?>" rel="stylesheet">
+    <script src="jsfreebie.js"></script>
 
 </head>
 
@@ -65,7 +66,7 @@
                 if (isset($_SESSION['student-user'])) {
                     echo
                     "<div class='navbar order-last order-lg-1'>
-                    <a href='view-cart.php'><i class='fas fa-shopping-cart fa-2x'></i></a>
+                    <span class='btn text-white'><i class='fas fa-shopping-cart' onclick='viewCart();'></i></span>
 
                     <span class='dropdown'>                    
                         <a class='btn' href='#' role='button' id='dropdownMenuLink' data-bs-toggle='dropdown' aria-expanded='false'>

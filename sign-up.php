@@ -4,87 +4,34 @@
     <br><br>
   <section class="breadcrumbs">
     <div class="container">
-      <div class="d-flex justify-content-between login-parent">
+
+    <script src="js\freebie.js"></script>
 
         <div class="login-form">
-          <form action="" method="POST" class="needs-validation" novalidate>
+            <form action="" method="POST">
 
-            <input type="text" name="full_name" required placeholder="Full Name" class="login-inputs form-control mx-auto">
-            <div class="invalid-feedback">
-              Please enter your name.
-            </div>
-            <br><br>
+              <input type="text" name="full_name" required placeholder="Full Name" class="login-inputs">
+              <br><br>
 
+              <input type="text" name="contact_number" required placeholder="Contact Number" class="login-inputs">
+              <br><br>
 
-            <input type="text" name="contact_number" required placeholder="Contact Number" class="login-inputs form-control mx-auto">
-            <div class="invalid-feedback">
-              Please enter a number.
-            </div>
-            <br><br>
+              <input type="text" name="email" required placeholder="Email Address" class="login-inputs">
+              <br><br>
 
+              <input type="text" name="username" required placeholder="Username (Only Letters and Digits)" class="login-inputs">
+              <br><br>
+              
+              <input type="password" name="password" required placeholder="Password" class="login-inputs">
+              <br><br>
 
-            <input type="text" name="email" required placeholder="Email Address" class="login-inputs form-control mx-auto">
-            <div class="invalid-feedback">
-              Please enter your email.
-            </div>
-            <br><br>
+              <input type="password" name="confirm_password" required placeholder="Confirm Password" class="login-inputs">
+              <br><br>
 
-            <input type="text" name="username" required placeholder="Username (Only Letters and Digits)" class="login-inputs form-control mx-auto">
-            <div class="invalid-feedback">
-              Please choose a username.
-            </div>
-            <br><br>
+              <input type="submit" name = "submit" value="sign up" class="book-a-table-btn submit-button">
+              <br><br><br>
 
-
-            <input type="password" name="password" required placeholder="Password" class="login-inputs form-control mx-auto">
-            <div class="invalid-feedback">
-              Please choose a password.
-            </div>
-            <br><br>
-
-
-            <input type="password" name="confirm_password" required placeholder="Confirm Password" class="login-inputs form-control mx-auto">
-            <div class="invalid-feedback">
-              Please confirm your password.
-            </div>
-            <br><br>
-
-
-            <div class="d-none">
-            <p>Choose Delivery Location:</p><br>
-            <input type="radio" name="location" value="Flavors of the North" required>Flavors of the North<br>
-            <input type="radio" name="location" value="Hostel Stilt Area" required>Hostel Stilt Area<br>
-            <input type="radio" name="location" value="Banana Leaf" required>Banana Leaf<br>
-            <input type="radio" name="location" value="Dining Hall" required>Dining Hall<br><br>
-            </div>
-
-
-            <button type="submit" name = "submit" value="sign up" class="book-a-table-btn submit-button">Sign up</button>
-            <br><br><br>
-
-            <p class="login-subtext">Already have an account? <a href="user-login.php">Log in </a>now</p>
-<!-- JS SCRIPT TO VALIDATE FORM ON FRONTEND -->
-  <script>
-    (function () {
-          'use strict'
-        
-          // Fetch all the forms we want to apply custom Bootstrap validation styles to
-          var forms = document.querySelectorAll('.needs-validation')
-        
-          // Loop over them and prevent submission
-          Array.prototype.slice.call(forms)
-            .forEach(function (form) {
-              form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                  event.preventDefault()
-                  event.stopPropagation()
-                }
-        
-                form.classList.add('was-validated')
-              }, false)
-            })
-        })()
-  </script>
+              <p class="login-subtext">Already have an account? <a href="user-login.php">Log in </a>now</p>
 
               <?php
                   if (isset($_SESSION['invalid-ph'])) {
