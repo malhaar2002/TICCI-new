@@ -53,4 +53,3 @@ function viewCart(){
         document.getElementById("f-r-form").submit();
     }
   }
-  

@@ -1,35 +1,47 @@
 <?php include("partials/header.php"); ?>
-
+<link rel="stylesheet" href="assets/css/style.css">
 <main id="main">
     <br><br>
   <section class="breadcrumbs">
     <div class="container">
 
-    <script src="js\freebie.js"></script>
+      <div class="d-flex justify-content-between login-parent">
 
         <div class="login-form">
-            <form action="" method="POST">
+            <form action="" method="POST" id="form">
+              <div class = "form_control">
+              <input type="text" name="full_name" id = "full-name" placeholder="Name" class="login-inputs">
+              <small>message</small>
+              </div>
 
-              <input type="text" name="full_name" required placeholder="Full Name" class="login-inputs">
-              <br><br>
+              <div class = "form_control">
+              <input type="text" name="contact_number" id ="contact-number" placeholder="Contact Number" class="login-inputs">
+              <small>message</small>
+              </div>
 
-              <input type="text" name="contact_number" required placeholder="Contact Number" class="login-inputs">
-              <br><br>
+              <div class = "form_control">
+              <input type="text" name="email" id = "email" placeholder="Email Address" class="login-inputs">
+              <small>message</small>
+              </div>
 
-              <input type="text" name="email" required placeholder="Email Address" class="login-inputs">
-              <br><br>
-
-              <input type="text" name="username" required placeholder="Username (Only Letters and Digits)" class="login-inputs">
-              <br><br>
+              <div class = "form_control">
+              <input type="text" name="username" id = "username" placeholder="Username (Only Letters and Digits)" class="login-inputs">
+              <small>message</small>
+              </div>
               
-              <input type="password" name="password" required placeholder="Password" class="login-inputs">
-              <br><br>
+              <div class = "form_control">
+              <input type="password" name="password" id = "password" placeholder="Password" class="login-inputs">
+              <small>message</small>
+              </div>
 
-              <input type="password" name="confirm_password" required placeholder="Confirm Password" class="login-inputs">
-              <br><br>
+              <div class = "form_control">
+              <input type="password" name="confirm_password" id = "password2" placeholder="Confirm Password" class="login-inputs">
+              <small>message</small>
+              </div>
 
               <input type="submit" name = "submit" value="sign up" class="book-a-table-btn submit-button">
               <br><br><br>
+              <!-- <button>Sign up</button> -->
 
               <p class="login-subtext">Already have an account? <a href="user-login.php">Log in </a>now</p>
 
@@ -87,7 +99,6 @@
     $username = $_POST['username'];
     $password = md5($_POST['password']);
     $confirm_password = md5($_POST['confirm_password']);
-    $location = $_POST['location'];
 
     // Full name to camel case
     $full_name = ucwords($full_name);
@@ -154,7 +165,7 @@
 
 
     // Entering information into database
-    $sql2 = "INSERT INTO tbl_user VALUES ('$full_name', '$contact_number', '$email', '$username', '$location', '$password')";
+    $sql2 = "INSERT INTO tbl_user VALUES ('$full_name', '$contact_number', '$email', '$username', '$password')";
     $res2 = mysqli_query($conn, $sql2);
 
     if ($res2 == TRUE) {
