@@ -1863,3 +1863,26 @@ section {
   color: #cda45e;
   border: none;
 }
+
+/* ADDITIONAL CSS FOR SIGNUP VALIDATION */
+#form .form_control{
+  width: min-content;
+  margin: auto;
+  margin-bottom: 10px;
+  /* padding-bottom: 5px; */
+}
+#form .ssuccess input{
+  border-color: #18d26e;
+}
+#form .serror input{
+  border-color: #e74c3c;
+}
+.form_control small{
+  visibility: hidden;
+}
+#form .serror small{
+  visibility: visible;
+  color: #e74c3c;
+  display: block;
+  margin: 5px;
+}
